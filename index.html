@@ -26,6 +26,22 @@
   .video .ph { position:absolute; inset:0; display:grid; place-items:center; color:#c9ced6; text-align:center; padding:20px; }
   .cta { text-align:center; padding:28px 0 8px; }
   .cta small { display:block; color:var(--muted); margin-top:10px; font-size:14px; }
+  .btns { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; }
+  .btn.ghost { background:transparent; color:var(--ink); border:2px solid var(--ink); }
+  .btn.ghost:hover { background:var(--ink); color:#fff; }
+  .report { background:var(--card); border:2px solid var(--accent); border-radius:16px; padding:30px 24px; display:grid; gap:20px; grid-template-columns:1.2fr 1fr; align-items:center; }
+  .report h2 { text-align:left; margin-bottom:8px; }
+  .report ul { margin:0; padding-left:20px; color:var(--muted); }
+  .report .side { text-align:center; }
+  .report .side small { display:block; color:var(--muted); margin-top:10px; font-size:14px; }
+  .vs { width:100%; border-collapse:collapse; background:var(--card); border-radius:12px; overflow:hidden; border:1px solid var(--line); font-size:16px; }
+  .vs th, .vs td { padding:13px 16px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top; }
+  .vs thead th { background:var(--dark); color:#fff; font-size:14px; letter-spacing:.03em; }
+  .vs td:first-child { font-weight:700; width:26%; }
+  .vs td:nth-child(2) { background:#fff7f2; }
+  .vs td:nth-child(2)::before { content:"✓ "; color:var(--accent); font-weight:800; }
+  .vs td:nth-child(3) { color:var(--muted); }
+  @media (max-width:700px) { .report { grid-template-columns:1fr; } .report h2 { text-align:center; } .vs { font-size:14px; } .vs th, .vs td { padding:10px; } }
   section { padding:44px 0; }
   h2 { font-size:clamp(24px,3.6vw,32px); line-height:1.2; margin:0 0 18px; text-align:center; }
   .grid { display:grid; gap:16px; grid-template-columns:repeat(4,1fr); }
@@ -69,7 +85,10 @@
     </div>
 
     <div class="cta">
-      <a class="btn" href="#book">Get my free Roofing Growth Plan</a>
+      <div class="btns">
+        <a class="btn" href="#book">Book my free Roofing Growth Plan</a>
+        <a class="btn ghost" href="#report">Just send me the free report</a>
+      </div>
       <small>30-minute call · No obligation · Month-to-month plans</small>
     </div>
 
@@ -82,6 +101,39 @@
         <div class="card"><span class="num">02</span><h3>Review Engine</h3><p>A simple text after every job that turns happy homeowners into fresh 5-star reviews.</p></div>
         <div class="card"><span class="num">03</span><h3>Call-Ready Website</h3><p>Tap-to-call, a "free inspection" form and city pages, so visitors become booked jobs.</p></div>
         <div class="card"><span class="num">04</span><h3>AI &amp; Search Authority</h3><p>Consistent details everywhere, so ChatGPT and Google's AI recommend you too.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Working with me vs a typical agency</h2>
+      <table class="vs">
+        <thead><tr><th></th><th>Working with me</th><th>A typical agency</th></tr></thead>
+        <tbody>
+          <tr><td>Who does the work</td><td>Me, the same strategist you talk to on every call</td><td>Often pitched by a senior, then handed to a junior</td></tr>
+          <tr><td>Who owns your accounts</td><td>You own your Google profile, website, GA4 and logins from day one</td><td>Sometimes set up under the agency's own accounts</td></tr>
+          <tr><td>What gets reported</td><td>Calls and form leads, with booked inspections confirmed with you each month</td><td>Rankings and traffic charts</td></tr>
+          <tr><td>Contract</td><td>Month to month, 30 days' notice</td><td>Often 6–12 month lock-ins</td></tr>
+          <tr><td>Your competitors</td><td>One roofing company per service area</td><td>May take on several roofers in your town</td></tr>
+          <tr><td>Small changes</td><td>Done within 2 business days</td><td>Added to a ticket queue</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="report">
+      <div class="report">
+        <div>
+          <h2>Not ready for a call? Get the free Map Pack Report</h2>
+          <ul>
+            <li>Where you rank on Google Maps for your main search, next to the top 3</li>
+            <li>How your reviews compare with theirs</li>
+            <li>A quick check of your website on a phone</li>
+            <li>The 5 fixes that would make the biggest difference first</li>
+          </ul>
+        </div>
+        <div class="side">
+          <p><strong>Reply "report" to the email I sent you</strong> and I'll send it over.</p>
+          <small>Delivered as a PDF within 2 business days. No call needed.</small>
+        </div>
       </div>
     </section>
 
@@ -104,6 +156,8 @@
       <details><summary>Am I locked into a contract?</summary><p>No. Plans are month to month with 30 days' notice. I'd rather earn your business every month.</p></details>
       <details><summary>How soon will I see results?</summary><p>Most quick wins show within 30–60 days. Bigger ranking gains build over 3–6 months. On the call I'll tell you honestly what's realistic for your area.</p></details>
       <details><summary>I've tried SEO before and it didn't work. Why is this different?</summary><p>Most roofing SEO is blog posts and keyword stuffing. This focuses on what drives calls: the map, reviews and a website built to convert. You'll see exactly what was done each month and what it produced.</p></details>
+      <details><summary>What will you report on?</summary><p>The things that pay the bills: phone calls and form leads from Google, and where you rank on the map. Each month we check together which of those became booked inspections, so the numbers mean something.</p></details>
+      <details><summary>Who will I actually work with?</summary><p>Me. I'm the person you talk to and the person doing the work, and you'll always know what's been done and why.</p></details>
       <details><summary>Do you work with my competitors?</summary><p>No. I take on one roofing company per service area, so I'm never helping two roofers compete for the same spot.</p></details>
     </section>
 
@@ -126,6 +180,14 @@
       document.title = "A quick video for " + b;
     } else if (c) {
       document.getElementById("headline").textContent = "How " + c + " roofers get more booked inspections from Google in the next 90 days";
+    }
+    // Pre-fill the free-report email with their details.
+    var rb = document.getElementById("reportBtn");
+    if (rb && rb.getAttribute("href").indexOf("mailto:") === 0) {
+      var h = rb.getAttribute("href");
+      if (b) h = h.replace(encodeURIComponent("Business name:"), encodeURIComponent("Business name: " + b));
+      if (c) h = h.replace(encodeURIComponent("City / service area:"), encodeURIComponent("City / service area: " + c));
+      rb.setAttribute("href", h);
     }
   })();
 </script>
